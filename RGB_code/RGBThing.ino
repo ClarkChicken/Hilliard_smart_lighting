@@ -13,20 +13,20 @@
 CRGB leds[NUM_LEDS];
 String ledState = "O"; 
 
- const char *boxNumber = "0";
+
 // Tracking arrays for active pulses
 int pulsePositions[MAX_PULSES];
 CRGB pulseColors[MAX_PULSES]; 
 unsigned long lastFrameTime = 0;
 int center = NUM_LEDS / 2;
 
-const char *ssid = "Yashphone3"; 
-const char *password = "qqqqqqqq"; 
+const char *ssid = "HCL Interns"; 
+const char *password = "Interns123!"; 
 
 // MQTT Broker settings
-const char *mqtt_broker = "10.63.200.160"; 
-const char *mqtt_topic = "lights/RGB/box1"; 
-const char *will_topic = "lights/RGB/box1/connection";
+const char *mqtt_broker = "192.168.60.6"; 
+const char *mqtt_topic = "lights/RGB/box1"; //Needs to be changed with box number 
+const char *will_topic = "lights/RGB/box1/connection"; //Needs to be changed with box number
 const char *mqtt_username = "emqx"; 
 const char *mqtt_password = "public"; 
 const int mqtt_port = 1883; 
