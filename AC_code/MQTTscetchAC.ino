@@ -13,13 +13,13 @@ dimmerLamp dimmer(outputPin, zerocross);
 int ACState = 0;
 
 // WiFi settings
-const char *ssid = "Yashphone3";             // Replace with your WiFi name
-const char *password = "qqqqqqqq";   // Replace with your WiFi password
+const char *ssid = "HCL Interns";             // Replace with your WiFi name
+const char *password = "Interns123!";   // Replace with your WiFi password
 
 // MQTT Broker settings
-const char *mqtt_broker = "10.63.200.160";  // EMQX broker endpoint
-const char *mqtt_topic = "lights/AC/box1";     // MQTT topic
-const char *will_topic = "lights/AC/box1/connection";
+const char *mqtt_broker = "192.168.60.6";  // EMQX broker endpoint
+const char *mqtt_topic = "lights/AC/box1";     // Needs to be changed with box number
+const char *will_topic = "lights/AC/box1/connection"; // Needs to be changed with box number
 
 const char *mqtt_username = "emqx";  // MQTT username for authentication
 const char *mqtt_password = "public";  // MQTT password for authentication
